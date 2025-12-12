@@ -1,6 +1,6 @@
+# File Konfigurasi IDE / Cache / Library
 *.iml
 .gradle
-/local.properties
 /.idea/caches
 /.idea/libraries
 /.idea/modules.xml
@@ -8,8 +8,27 @@
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
-/build
 /captures
 .externalNativeBuild
 .cxx
+
+# File Build dan Output Android
+/build
+/out
+/release
+*.apk
+*.aab
+
+# Keamanan (API Keys & Kredensial)
 local.properties
+/secrets.properties
+**/google-services.json
+/res/values/api_keys.xml
+
+# File Data Besar / Output Training
+/models/
+/data/
+*.txt
+__pycache__/
+*.pyc
+*.log
